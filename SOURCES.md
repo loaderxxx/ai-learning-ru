@@ -33,3 +33,5 @@
 Сравнительный срез школ, документация по API, MCP/A2A, оценке и безопасности находятся в [отдельном каталоге источников](developers/SOURCES.md). Новая ветка программы: [ИИ для разработчиков](developers/README.md).
 
 Для уже использующих ИИ разработчиков: [35 источников следующего уровня](advanced/SOURCES.md) и [карта программ](advanced/PROGRAMS.md).
+
+Источники прикладных миссий: [OpenAI, Google, n8n, Digital Inquiry Group и Python](practical/SOURCES.md).

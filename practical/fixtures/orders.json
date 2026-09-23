@@ -1,0 +1,72 @@
+[
+  {
+    "row": "r01",
+    "order_id": "A-01",
+    "status": "paid",
+    "amount": "1200.00",
+    "currency": "RUB"
+  },
+  {
+    "row": "r02",
+    "order_id": "A-02",
+    "status": "paid",
+    "amount": "800.00",
+    "currency": "RUB"
+  },
+  {
+    "row": "r03",
+    "order_id": "A-02",
+    "status": "paid",
+    "amount": "800.00",
+    "currency": "RUB"
+  },
+  {
+    "row": "r04",
+    "order_id": "A-03",
+    "status": "refunded",
+    "amount": "500.00",
+    "currency": "RUB"
+  },
+  {
+    "row": "r05",
+    "order_id": "A-04",
+    "status": "paid",
+    "amount": null,
+    "currency": "RUB"
+  },
+  {
+    "row": "r06",
+    "order_id": "A-05",
+    "status": "paid",
+    "amount": "25.00",
+    "currency": "USD"
+  },
+  {
+    "row": "r07",
+    "order_id": "A-06",
+    "status": "cancelled",
+    "amount": "300.00",
+    "currency": "RUB"
+  },
+  {
+    "row": "r08",
+    "order_id": "A-07",
+    "status": "paid",
+    "amount": "1 500,00",
+    "currency": "RUB"
+  },
+  {
+    "row": "r09",
+    "order_id": "A-08",
+    "status": "paid",
+    "amount": "400.00",
+    "currency": "RUB"
+  },
+  {
+    "row": "r10",
+    "order_id": "A-08",
+    "status": "paid",
+    "amount": "450.00",
+    "currency": "RUB"
+  }
+]

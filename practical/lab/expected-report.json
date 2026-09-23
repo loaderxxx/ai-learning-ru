@@ -1,0 +1,40 @@
+{
+  "input_rows": 10,
+  "included_rows": [
+    "r01",
+    "r02",
+    "r06",
+    "r08"
+  ],
+  "excluded_rows": [
+    {
+      "row": "r03",
+      "reason": "duplicate"
+    },
+    {
+      "row": "r04",
+      "reason": "status:refunded"
+    },
+    {
+      "row": "r05",
+      "reason": "missing_amount"
+    },
+    {
+      "row": "r07",
+      "reason": "status:cancelled"
+    },
+    {
+      "row": "r09",
+      "reason": "conflicting_order"
+    },
+    {
+      "row": "r10",
+      "reason": "conflicting_order"
+    }
+  ],
+  "totals_by_currency": {
+    "RUB": "3500.00",
+    "USD": "25.00"
+  },
+  "scope": "known paid nonconflicting orders only; no currency conversion"
+}
