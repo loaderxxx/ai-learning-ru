@@ -1,0 +1,33 @@
+{
+  "kind": "illustrative_synthetic",
+  "runs": [
+    {
+      "case_id": "example-a",
+      "strategy": "solo",
+      "accepted": true,
+      "human_minutes": 4,
+      "tokens": null
+    },
+    {
+      "case_id": "example-b",
+      "strategy": "solo",
+      "accepted": false,
+      "human_minutes": 5,
+      "tokens": null
+    },
+    {
+      "case_id": "example-a",
+      "strategy": "roles",
+      "accepted": true,
+      "human_minutes": 6,
+      "tokens": null
+    },
+    {
+      "case_id": "example-b",
+      "strategy": "roles",
+      "accepted": true,
+      "human_minutes": 7,
+      "tokens": null
+    }
+  ]
+}

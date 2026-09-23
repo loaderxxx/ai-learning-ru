@@ -1,0 +1,26 @@
+{
+  "meeting_time": {
+    "value": "12:15, московское время",
+    "quote": "Поправка: в 12:15 по московскому времени."
+  },
+  "meeting_date": {
+    "value": null,
+    "quote": null
+  },
+  "price_rub": {
+    "value": "1500",
+    "quote": "Исправляю: 1500 рублей."
+  },
+  "participants": {
+    "value": null,
+    "quote": null
+  },
+  "join_link": {
+    "value": null,
+    "quote": null
+  },
+  "followup": {
+    "value": "Тимур: три слайда к пятнице; точная дата не указана",
+    "quote": "Тимур подготовит три слайда к пятнице. Точная дата этой пятницы не указана."
+  }
+}
