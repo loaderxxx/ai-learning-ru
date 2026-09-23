@@ -9,6 +9,8 @@
 | C04 | [Reviewing and testing code](https://cursor.com/learn/reviewing-testing), Cursor | Открытый урок | Проверка предложенных изменений |
 | O01 | [OpenAI Academy Courses](https://academy.openai.com/pages/courses), OpenAI | Каталог курсов | Вход в официальный маршрут для работы с ИИ |
 | O02 | [Prompt engineering best practices for ChatGPT](https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt), OpenAI | Справочное руководство | Ясность запроса, контекст, уточнение, тон |
+| O03 | [What is ChatGPT: FAQ](https://help.openai.com/en/articles/12677804-what-is-chatgpt-faq), OpenAI | Официальная справка | Первое сообщение и продолжение разговора |
+| O04 | [Главная страница ChatGPT](https://help.openai.com/ru-ru/articles/9125172-the-chatgpt-home-page), OpenAI | Официальная справка на русском | Поле сообщения и начало работы |
 | A01 | [Claude 101](https://academy.claude.com/courses/claude-101), Anthropic | Курс | Первые разговоры и работа с текстом |
 | A02 | [Getting better results](https://academy.claude.com/courses/claude-101/getting-better-results), Anthropic | Открытый урок | Конкретная обратная связь и проверка результата |
 | G01 | [Learn AI skills](https://ai.google/learn-ai-skills/), Google | Каталог | Подбор следующего вводного блока |
