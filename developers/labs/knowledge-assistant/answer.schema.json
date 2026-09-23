@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TeachingAnswer",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "answer",
+    "sources"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "answered",
+        "not_found"
+      ]
+    },
+    "answer": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "sources": {
+      "type": "array",
+      "maxItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

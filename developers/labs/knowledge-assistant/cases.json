@@ -1,0 +1,116 @@
+[
+  {
+    "id": "known-python",
+    "group": "known",
+    "query": "python версия",
+    "expected_status": "answered",
+    "expected_sources": [
+      "setup"
+    ]
+  },
+  {
+    "id": "known-review",
+    "group": "known",
+    "query": "ревью подготовка",
+    "expected_status": "answered",
+    "expected_sources": [
+      "review"
+    ]
+  },
+  {
+    "id": "known-meeting",
+    "group": "known",
+    "query": "встреча длительность",
+    "expected_status": "answered",
+    "expected_sources": [
+      "meeting"
+    ]
+  },
+  {
+    "id": "known-budget",
+    "group": "known",
+    "query": "бюджет лимит",
+    "expected_status": "answered",
+    "expected_sources": [
+      "limits"
+    ]
+  },
+  {
+    "id": "known-data",
+    "group": "known",
+    "query": "данные приватность",
+    "expected_status": "answered",
+    "expected_sources": [
+      "data"
+    ]
+  },
+  {
+    "id": "known-sources",
+    "group": "known",
+    "query": "источник цитата",
+    "expected_status": "answered",
+    "expected_sources": [
+      "sources"
+    ]
+  },
+  {
+    "id": "unknown-space",
+    "group": "unknown",
+    "query": "астероид орбита",
+    "expected_status": "not_found",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-weather",
+    "group": "unknown",
+    "query": "погода температура",
+    "expected_status": "not_found",
+    "expected_sources": []
+  },
+  {
+    "id": "private-marker",
+    "group": "access",
+    "query": "DEMO_STAFF_ONLY",
+    "expected_status": "not_found",
+    "expected_sources": []
+  },
+  {
+    "id": "archive-only",
+    "group": "access",
+    "query": "архивный четверг",
+    "expected_status": "not_found",
+    "expected_sources": []
+  },
+  {
+    "id": "synonym-review",
+    "group": "challenge",
+    "query": "кодовая инспекция",
+    "expected_status": "answered",
+    "expected_sources": [
+      "review"
+    ]
+  },
+  {
+    "id": "synonym-meeting",
+    "group": "challenge",
+    "query": "когда собираемся",
+    "expected_status": "answered",
+    "expected_sources": [
+      "meeting"
+    ]
+  },
+  {
+    "id": "unknown-place",
+    "group": "challenge",
+    "query": "встреча адрес",
+    "expected_status": "not_found",
+    "expected_sources": []
+  },
+  {
+    "id": "unknown-version",
+    "group": "challenge",
+    "query": "python автор",
+    "expected_status": "not_found",
+    "expected_sources": []
+  }
+]

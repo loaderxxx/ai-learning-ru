@@ -1,0 +1,21 @@
+# Teaching template. Copy to .github/workflows/ in your OWN practice repository.
+# Verify action versions and consider pinning approved commit SHAs before use.
+name: learning-lab
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  local-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Contract and access tests
+        run: python -m unittest discover -s developers/labs/knowledge-assistant -p 'test_*.py' -v
+      - name: Report visible evaluation cases (not a quality gate)
+        run: python developers/labs/knowledge-assistant/evaluate.py

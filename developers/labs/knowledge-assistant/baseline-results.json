@@ -1,0 +1,185 @@
+{
+  "mode": "offline-extractive-baseline",
+  "model_calls": 0,
+  "note": "Visible fixture checks of status and source IDs, NOT semantic/LLM evaluation.",
+  "passed": 10,
+  "total": 14,
+  "groups": {
+    "known": {
+      "passed": 6,
+      "total": 6
+    },
+    "unknown": {
+      "passed": 2,
+      "total": 2
+    },
+    "access": {
+      "passed": 2,
+      "total": 2
+    },
+    "challenge": {
+      "passed": 0,
+      "total": 4
+    }
+  },
+  "results": [
+    {
+      "id": "known-python",
+      "group": "known",
+      "passed": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected_sources": [
+        "setup"
+      ],
+      "actual_sources": [
+        "setup"
+      ]
+    },
+    {
+      "id": "known-review",
+      "group": "known",
+      "passed": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected_sources": [
+        "review"
+      ],
+      "actual_sources": [
+        "review"
+      ]
+    },
+    {
+      "id": "known-meeting",
+      "group": "known",
+      "passed": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected_sources": [
+        "meeting"
+      ],
+      "actual_sources": [
+        "meeting"
+      ]
+    },
+    {
+      "id": "known-budget",
+      "group": "known",
+      "passed": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected_sources": [
+        "limits"
+      ],
+      "actual_sources": [
+        "limits"
+      ]
+    },
+    {
+      "id": "known-data",
+      "group": "known",
+      "passed": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected_sources": [
+        "data"
+      ],
+      "actual_sources": [
+        "data"
+      ]
+    },
+    {
+      "id": "known-sources",
+      "group": "known",
+      "passed": true,
+      "expected_status": "answered",
+      "actual_status": "answered",
+      "expected_sources": [
+        "sources"
+      ],
+      "actual_sources": [
+        "sources"
+      ]
+    },
+    {
+      "id": "unknown-space",
+      "group": "unknown",
+      "passed": true,
+      "expected_status": "not_found",
+      "actual_status": "not_found",
+      "expected_sources": [],
+      "actual_sources": []
+    },
+    {
+      "id": "unknown-weather",
+      "group": "unknown",
+      "passed": true,
+      "expected_status": "not_found",
+      "actual_status": "not_found",
+      "expected_sources": [],
+      "actual_sources": []
+    },
+    {
+      "id": "private-marker",
+      "group": "access",
+      "passed": true,
+      "expected_status": "not_found",
+      "actual_status": "not_found",
+      "expected_sources": [],
+      "actual_sources": []
+    },
+    {
+      "id": "archive-only",
+      "group": "access",
+      "passed": true,
+      "expected_status": "not_found",
+      "actual_status": "not_found",
+      "expected_sources": [],
+      "actual_sources": []
+    },
+    {
+      "id": "synonym-review",
+      "group": "challenge",
+      "passed": false,
+      "expected_status": "answered",
+      "actual_status": "not_found",
+      "expected_sources": [
+        "review"
+      ],
+      "actual_sources": []
+    },
+    {
+      "id": "synonym-meeting",
+      "group": "challenge",
+      "passed": false,
+      "expected_status": "answered",
+      "actual_status": "not_found",
+      "expected_sources": [
+        "meeting"
+      ],
+      "actual_sources": []
+    },
+    {
+      "id": "unknown-place",
+      "group": "challenge",
+      "passed": false,
+      "expected_status": "not_found",
+      "actual_status": "answered",
+      "expected_sources": [],
+      "actual_sources": [
+        "meeting"
+      ]
+    },
+    {
+      "id": "unknown-version",
+      "group": "challenge",
+      "passed": false,
+      "expected_status": "not_found",
+      "actual_status": "answered",
+      "expected_sources": [],
+      "actual_sources": [
+        "setup"
+      ]
+    }
+  ]
+}
