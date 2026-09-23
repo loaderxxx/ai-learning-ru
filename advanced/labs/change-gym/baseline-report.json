@@ -1,0 +1,115 @@
+{
+  "kind": "fixed synthetic mutation exercise",
+  "model_calls": 0,
+  "mutants": 6,
+  "smoke_detected": 0,
+  "contract_detected": 6,
+  "reference_passed": true,
+  "results": [
+    {
+      "variant": "reference",
+      "smoke": {
+        "tests": 2,
+        "successful": true,
+        "failures": 0,
+        "errors": 0
+      },
+      "contract": {
+        "tests": 17,
+        "successful": true,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    {
+      "variant": "blank_title",
+      "smoke": {
+        "tests": 2,
+        "successful": true,
+        "failures": 0,
+        "errors": 0
+      },
+      "contract": {
+        "tests": 17,
+        "successful": false,
+        "failures": 2,
+        "errors": 0
+      }
+    },
+    {
+      "variant": "boolean_priority",
+      "smoke": {
+        "tests": 2,
+        "successful": true,
+        "failures": 0,
+        "errors": 0
+      },
+      "contract": {
+        "tests": 17,
+        "successful": false,
+        "failures": 1,
+        "errors": 0
+      }
+    },
+    {
+      "variant": "duplicate_retry",
+      "smoke": {
+        "tests": 2,
+        "successful": true,
+        "failures": 0,
+        "errors": 0
+      },
+      "contract": {
+        "tests": 17,
+        "successful": false,
+        "failures": 4,
+        "errors": 0
+      }
+    },
+    {
+      "variant": "overwrite_conflict",
+      "smoke": {
+        "tests": 2,
+        "successful": true,
+        "failures": 0,
+        "errors": 0
+      },
+      "contract": {
+        "tests": 17,
+        "successful": false,
+        "failures": 2,
+        "errors": 0
+      }
+    },
+    {
+      "variant": "partial_batch",
+      "smoke": {
+        "tests": 2,
+        "successful": true,
+        "failures": 0,
+        "errors": 0
+      },
+      "contract": {
+        "tests": 17,
+        "successful": false,
+        "failures": 2,
+        "errors": 0
+      }
+    },
+    {
+      "variant": "mutable_snapshot",
+      "smoke": {
+        "tests": 2,
+        "successful": true,
+        "failures": 0,
+        "errors": 0
+      },
+      "contract": {
+        "tests": 17,
+        "successful": false,
+        "failures": 1,
+        "errors": 0
+      }
+    }
+  ]
+}
