@@ -17,9 +17,10 @@ You do not need every language and framework below. One strong stack and demonst
 | **Core: programming** | Clear code, Git, HTTP/JSON, errors, tests, and data handling | [00–01: entry and foundations](../ai-in-code/modules/00-start.en.md) |
 | **Core: architecture** | A defined problem, contract, constraints, and deterministic calculations outside the model | [02: contracts](../ai-in-code/modules/02-contracts.en.md) |
 | **Core: LLM APIs/SDKs** | Model calls, structural and semantic checks, refusal and timeout handling | [03: model adapter](../ai-in-code/modules/03-model-api.en.md) |
-| **Core: models and routing** | A common interface, eligible-route selection, and bounded fallback | [04: multiple models](../ai-in-code/modules/04-routing.en.md) |
+| **Core: context engineering and early evals** | Relevant permitted context; task-specific quality measured before choosing a model | [03A: context and evaluation](../ai-in-code/modules/03a-context-and-evals.en.md) |
+| **Core: models and routing** | A common interface; eligibility/quality before price optimization; qualified fallback | [04: multiple models](../ai-in-code/modules/04-routing.en.md) |
 | **Core: tools and orchestration** | Validated arguments and authority, controlled steps and state | [05: tools](../ai-in-code/modules/05-tools.en.md), [06: workflows](../ai-in-code/modules/06-workflows.en.md) |
-| **Core: quality and security** | Negative tests, evals, data boundaries, and safe handling of retries/side effects | [09–11: start with evals](../ai-in-code/modules/09-evals.en.md) |
+| **Core: system quality and security** | Regressions, fresh held-out cases, data boundaries, and safe retries | [09–11: system evals](../ai-in-code/modules/09-evals.en.md) |
 | **Core: delivery** | Reproducible startup, safe telemetry, explicit limitations, and cost awareness | [12: delivery](../ai-in-code/modules/12-delivery.en.md), [13: observability](../ai-in-code/modules/13-observability.en.md) |
 | **Useful extension: RAG** | Sources, versions, access filtering, retrieval, and factual checks | [07: retrieval](../ai-in-code/modules/07-retrieval.en.md) |
 | **Useful extension: MCP** | A real read-only client/server integration and compatibility checks | [08: protocol](../ai-in-code/modules/08-mcp.en.md) |
@@ -29,13 +30,13 @@ Operational experience is valuable when supported by a specific example: what fa
 
 ## Show a project, not just a list of technologies
 
-A small project is enough to begin: accept a task, select a handler, call a model through an adapter, execute one tool safely, validate output, handle a failure, and leave a useful event log. Provide a startup command and negative tests. Explain where AI belongs and where ordinary code is better.
+A small project is enough: accept a task, assemble context, select a handler using measured quality and constraints, call a model through an adapter, execute one tool safely, validate output, handle failure, and leave a useful event log. Provide startup instructions, negative tests, and an explanation of why the chosen model fits the task rather than merely costing less.
 
 A large commercial product is not required. Demonstrate equivalent existing work or the [Request Desk capstone](../ai-in-code/modules/15-capstone.en.md). Use synthetic data and do not publish someone else's confidential code. Mocks are valid teaching artifacts, but distinguish them honestly from live integrations.
 
 ## Missing some skills? Follow the route
 
-**[Open the 16-stage learning pathway](../ai-in-code/README.en.md).** Each chapter includes an explanation, official resources, practice, completion criteria, and the next step. Start with the [no-key offline lab](../ai-in-code/lab/README.en.md). Learn to reproduce, change, and explain a result rather than simply copy a tutorial.
+**[Open the 16 core stages and companion 03A](../ai-in-code/README.en.md).** Each chapter includes an explanation, official resources, practice, completion criteria, and the next step. Start with the [no-key offline lab](../ai-in-code/lab/README.en.md). Learn to reproduce, change, and explain a result rather than simply copy a tutorial.
 
 You do not have to finish the entire course before asking a question. Experienced developers can start with the capstone and fill specific gaps. New programmers should first follow the language foundations linked from stage 00.
 
@@ -49,4 +50,4 @@ The technical conversation focuses on code, architecture, failures, and working 
 
 **Learn. Build a working example. Show how it works. Let's connect.**
 
-Version 0.8 · 28 September 2026. This is an open invitation to a technical conversation, not guaranteed employment or a requirement to perform unpaid client work. The program is independent of programming schools and tool vendors.
+Version 0.8.1 · 28 September 2026. This is an open invitation to a technical conversation, not guaranteed employment or a requirement to perform unpaid client work. The program is independent of programming schools and tool vendors.

@@ -1,8 +1,10 @@
-# 09. Evals: demonstrate improvement rather than assume it
+# 09. Evals: regressions and complete-system quality
 
 [Русский](09-evals.md) · [Learning map](../README.en.md)
 
-**Prerequisite:** a baseline and several scenarios. **Outcome:** a repeatable evaluation set, an error report, and evidence supporting one change.
+**Prerequisite:** [first evals in 03A](03a-context-and-evals.en.md), a baseline, and implemented tools/workflow/retrieval. **Outcome:** repeatable system-level evaluation and a regression report. This extends early evaluation rather than introducing quality for the first time.
+
+In 03A, you evaluated context and models before selecting routes. Now examine the system after adding a router, tools, RAG/MCP, and state: route-selection errors, missing evidence, an incorrect tool, or an authorization failure can undermine otherwise good model responses.
 
 ## Separate the layers
 
@@ -20,14 +22,14 @@ Case counts and thresholds in this course are teaching choices, not industry sta
 
 ## Build a small evaluation set
 
-1. Write 20 synthetic cases: eight ordinary, four unanswerable/ambiguous, four access-control or prompt-injection cases, and four format/transport failures. This is a starting teaching composition.
+1. Expand earlier work into 20 synthetic cases: eight ordinary, four unanswerable/ambiguous, four access-control or prompt-injection cases, and four format/transport failures. This is a starting teaching composition. Cases already inspected in 03/03A/04 remain development/regression data, not fresh held-out evidence.
 2. Record an ID, input, permitted sources, expected status, required facts, and prohibited actions for each case. Do not require one exact wording for every free-text answer.
-3. Split the set into 12 development cases and eight held-out cases. Keep close paraphrases of one scenario together so near-duplicate examples do not leak across the split.
+3. Split the set into 12 development cases and eight **fresh** held-out cases. Keep close paraphrases of one scenario together so near-duplicate examples do not leak across the split.
 4. Tune code and prompts using development cases. Run held-out cases after selecting a variant; repeatedly tuning against them makes them another development set.
-5. Run the baseline and then one changed variant. Record model, prompt/corpus/code versions, parameters, seed where supported, elapsed time, and cost or usage.
-6. Measure status correctness, supported facts, access boundaries, prohibited actions, completion, and latency separately. A high average usefulness score must not hide a data leak.
+5. Run the baseline and then one changed variant. Record model, prompt/context/corpus/router/code versions, parameters, seed where supported, elapsed time, and cost or usage.
+6. Measure status correctness, supported facts, access boundaries, prohibited actions, completion, and latency separately. A high average usefulness score must not hide a data leak. Compare the complete router with a fixed model, not only individual models with one another.
 7. For nondeterministic cases, repeat under the same protocol and report variation rather than only the best response.
-8. Categorize errors as retrieval, generation, contract, tool, authorization, or transport. Fix the cause instead of reflexively lengthening the prompt.
+8. Categorize errors as context, routing, retrieval, generation, contract, tool, authorization, or transport. Fix the cause instead of reflexively lengthening the prompt.
 
 ## Human review and model judges
 

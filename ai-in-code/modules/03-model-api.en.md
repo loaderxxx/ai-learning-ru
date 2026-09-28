@@ -4,6 +4,8 @@
 
 **Prerequisite:** a specification and a mock. **Outcome:** a replaceable model adapter, with live execution recorded separately from offline tests.
 
+**Stage 03 sequence:** first API call on this page → [03A: context engineering and first evals](03a-context-and-evals.en.md) → [04: evidence-based routing](04-routing.en.md). Quality evaluation does not wait until stage 09.
+
 ## Understand the call
 
 A remote model is a network service. Your program assembles instructions, input, and permitted context, submits them through an SDK or HTTP, receives a response, and validates it. The SDK is a client library, not the model. A chat-interface subscription is not evidence of API access: check your account's access and spending controls.
@@ -26,7 +28,7 @@ Apply three checks in order: the response completed; its structure meets the con
 4. Send one synthetic request such as `"Please explain the club opening hours"`. The allowed classifications are `faq`, `calculation`, `draft`, and `unknown`.
 5. Obtain a classification with a brief explanation tied to the input. Validate types and allowed values. Record the prompt and schema versions in your experiment.
 6. Inject the adapter into your application. Keep ScriptedModel for tests; make live integration tests an explicit, separate command.
-7. Run five previously labelled examples and preserve every outcome, including failures.
+7. Run five previously labelled examples and preserve every outcome, including failures. These are initial development cases for 03A, not an untouched final test set.
 
 This starter fragment is for an isolated experiment. It is **not** a complete adapter, a tool-calling loop, or a live integration verified by this course release:
 
@@ -50,6 +52,6 @@ Use a fake transport rather than spending money to induce errors: invalid creden
 
 Add streaming only after the non-streaming path works. Never execute a tool from partial argument fragments: wait for the completed message, then validate it. A partially displayed answer must remain labelled incomplete if the stream breaks.
 
-**Done:** provide a run command, SDK version, model identifier, five results, and an explicit `LIVE VERIFIED` or `NOT RUN` status. Without API access, complete the contract work and document the missing integration rather than presenting a mock as a live connection.
+**Ready for 03A:** provide a run command, SDK version, model identifier, five results, and an explicit `LIVE VERIFIED` or `NOT RUN` status. Without API access, complete the contract work and document the missing integration rather than presenting a mock as a live connection.
 
-[Previous](02-contracts.en.md) · [Next: multiple models](04-routing.en.md)
+[Previous](02-contracts.en.md) · [Next: context and first evals](03a-context-and-evals.en.md)
