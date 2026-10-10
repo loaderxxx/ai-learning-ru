@@ -86,3 +86,11 @@
 Это независимая учебная инициатива. Она не является официальным курсом или партнёрской программой производителей.
 
 [Источники начального маршрута](SOURCES.md) · [Источники для разработчиков](developers/SOURCES.md) · [Источники следующего уровня](advanced/SOURCES.md) · [Источники практикума](practical/SOURCES.md) · [Источники новых блоков](next/SOURCES.md) · [Происхождение и права](RIGHTS.md) · [Как подготовлены материалы](AI_DISCLOSURE.md)
+
+## Contact / Контакты
+
+For project inquiries and technology collaboration: **[vladimir.uzbek.ai@gmail.com](mailto:vladimir.uzbek.ai@gmail.com)**.
+
+По вопросам проектов и сотрудничества: **[vladimir.uzbek.ai@gmail.com](mailto:vladimir.uzbek.ai@gmail.com)**.
+
+[Personal technology portfolio](https://personal-portfolio-web-production-1e48.up.railway.app/) · [All public GitHub projects](https://github.com/loaderxxx?tab=repositories&type=public).
